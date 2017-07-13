@@ -14,7 +14,7 @@ import tensorflow as tf
 class _BaseCNN(object):
 
     def __init__(self, shape, num_classes, keep_prob):
-        """shape: [n_samples, channels, n_features]"""
+        """shape: [n_samples, n_features, channels]"""
         self._shape = shape
         self._n_class = num_classes
         self._keep_rate = keep_prob
@@ -138,7 +138,7 @@ class BasicCNN(_BaseCNN):
                           input_layer,
                           kernel_size=[1, 2, 2, 1],
                           mode='max'):
-        """max pooling layer to reduce overfitting"""
+        """default max pooling layer to reduce overfitting"""
         if mode == 'max':
             return self._max_pool(input_layer, kernel_size)
         elif mode == 'average':
