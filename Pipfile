@@ -65,7 +65,7 @@ prompt_toolkit = "==2.0.7"
 Pygments = "==2.2.0"
 PyYAML = "==3.13"
 Send2Trash = "==1.5.0"
-Werkzeug = "==0.14.1"
+Werkzeug = "==0.15.3"
 
 [requires]
 python_version = "3.6"
