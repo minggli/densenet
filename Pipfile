@@ -63,7 +63,7 @@ MarkupSafe = "==1.1.0"
 prometheus_client = "==0.4.2"
 prompt_toolkit = "==2.0.7"
 Pygments = "==2.2.0"
-PyYAML = "==3.13"
+PyYAML = "==5.1"
 Send2Trash = "==1.5.0"
 Werkzeug = "==0.14.1"
 
